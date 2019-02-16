@@ -1,0 +1,43 @@
+﻿<table class="table table-bordered table-hover table-sm">
+  <thead>
+    <tr class="table-warning">
+      <th>#</th>
+      <th>Task Name</th>
+      <th>
+        <div class="input-group">
+          <% include filter %>
+        </div>
+      </th>
+      <th>Date of completion</th>
+      <th>Files</th>
+    </tr>   
+  </thead>
+  <% for(var i=0; i<data.length;i++) {%>
+    <tr class="table-info">
+      <td>
+        <%=data[i].id %>
+      </td>
+      <td>
+        <%=data[i].taskname %>
+        </td>
+      <td>
+        <%=data[i].status %>
+      </td>
+      <td>
+        <%=data[i].date %>
+      </td>
+      <td>
+        <div class="btn-group" role="group">
+          <button id="btnFiles<%=data[i].id %>" type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" <%=data[i].files.length == 0 ? "disabled" : "" %>>
+              <i class="fas fa-file-download"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnFiles<%=data[i].id %>">
+            <% data[i].files.forEach((file) => { %>
+					<a class="dropdown-item" target="_blank" href="/files/<%= file %>"><%=file %></a>
+            <% }); %>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <%} %>
+</table>

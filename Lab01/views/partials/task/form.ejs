@@ -1,0 +1,52 @@
+﻿<form action="/addTask" method="post" enctype="multipart/form-data">
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <h6
+        <label for="taskname">Task name</label>
+      </h6>
+      <input type="text" class="form-control" id="taskname" name="taskname" placeholder="Task name" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <h6
+        <label for="status">Status</label>
+      </h6>
+      <div class="input-group">
+        <select class="custom-select" id="status" name="status" required>
+          <option value="Not started">Not started</option>
+          <option value="In process">In process</option>
+          <option value="Ready">Ready</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <h6
+        <label for="date">Date</label>
+      </h6>
+      <input id="date" class="form-control datepicker" data-provide="datepicker" name="date" placeholder="dd.mm.yyyy" required>
+        <script type="text/javascript">
+          $('.datepicker').datepicker({});
+        </script>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <h6
+        <label for="date">Upload</label>
+      </h6>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="files" name="files" data-multiple-target="{target} files selected" multiple>
+        <label class="custom-file-label" for="files">Choose files</label>
+      </div>
+    </div>
+  </div>
+  
+  <button class="btn btn-primary col-1 mb-3" type="submit" name="submit">Submit</button>
+</form>

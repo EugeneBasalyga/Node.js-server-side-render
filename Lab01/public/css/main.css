@@ -1,0 +1,19 @@
+﻿body {
+    /*padding: 10px;*/
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.page-container {
+    padding: 15px
+}
+
+.footer {
+    height: 50px;
+    background-color: #A5C6FF;
+    /*width: calc(100% -100px);*/
+    width: 100%;
+}

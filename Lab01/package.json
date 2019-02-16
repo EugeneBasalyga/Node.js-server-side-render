@@ -1,0 +1,28 @@
+{
+  "name": "lab01",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "description": "Lab01",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.1",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^4.2.1",
+    "bootstrap-datepicker": "^1.8.0",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.14.0",
+    "formidable": "^1.2.1",
+    "mdbootstrap": "^4.7.1",
+    "morgan": "^1.7.0",
+    "popper.js": "^1.14.7",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "^2.3.0"
+  }
+}
